@@ -1,0 +1,57 @@
+/*
+    Variable
+*/
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border-color: yellow; }
+
+.container {
+  width: 100%; }
+
+article[role="main"] {
+  float: left;
+  /* SCSS Math Operators */
+  width: 62.5%;
+  color: blue; }
+
+aside[role="complementary"] {
+  float: right;
+  width: 31.25%; }
+
+p {
+  color: gray;
+  font-family: Helvetica, sans-serif; }
+
+/* Nesting */
+nav ul {
+  list-style-type: none; }
+nav li {
+  color: red; }
+
+.box {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  background-color: orange;
+  height: 100px;
+  width: 100px; }
+
+article[role="main"] a {
+  padding: 10px 15px;
+  background-color: blue; }
+article[role="main"] a:hover {
+  /* SCSS Function */
+  background-color: #0000e6; }
+
+/*# sourceMappingURL=style.css.map */

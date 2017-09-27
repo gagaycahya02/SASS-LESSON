@@ -1,0 +1,48 @@
+
+
+
+// import an scss file from another directory
+@import 'modules/variables';
+@import 'modules/mixin';
+@import 'modules/extend';
+@import 'modules/operators';
+
+p{
+	color:$font-color;
+    font-family:$font-stack;
+}
+
+/* Nesting */
+nav{
+    ul{ 
+     list-style-type:none;   
+    }
+    
+    li{
+        color:red;
+    }
+}
+
+.box
+{
+    // Calling an mixin with include
+    @include border-radius(20px);
+    background-color:$box-color;
+    height:$box-height;
+    width:$box-width;
+}
+
+article[role="main"]
+{
+    a
+    {
+        padding:10px 15px;
+        background-color:$awesome-blue;
+    }
+    
+    a:hover
+    {
+        /* SCSS Function */
+        background-color:darken($awesome-blue,5%);
+    }
+}

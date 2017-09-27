@@ -1,0 +1,18 @@
+.container
+{
+    width:100%;
+}
+
+article[role="main"]
+{
+    float:left;
+    /* SCSS Math Operators */
+    width:600px / 960px * 100%;
+    color:blue;
+}
+
+aside[role="complementary"]
+{
+    float:right;
+    width:300px / 960px * 100%;
+}
